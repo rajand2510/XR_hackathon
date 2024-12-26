@@ -9,7 +9,7 @@ const products = [
   { name: "Wall Clock", price: 24.99, gltfPath: "/models/side_table_1/scene.gltf", imageSrc: "/image/9.png" },
 ];
 
-function ProductShowcase() {
+function Model() {
   return (
     <div className="container mx-auto py-12">
       <h3 className="text-3xl font-bold text-center mb-8">Featured Products</h3>
@@ -45,4 +45,4 @@ function ProductShowcase() {
   );
 }
 
-export default ProductShowcase;
+export default Model;
