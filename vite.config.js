@@ -3,8 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Ensure this matches your deployment root
-  build: {
-    outDir: 'dist', // Default output folder for Vite
-  }
+  base: '/', // Ensures paths are relative to the root
 });
