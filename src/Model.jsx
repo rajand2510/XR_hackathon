@@ -152,6 +152,7 @@ function Model() {
                 cardColor="" // Optional: Set the card color
                 textColor="#575656" // Optional: Set text color
                 cardStyle="minimal"
+               
               />
             </div>
           ))}
@@ -161,26 +162,28 @@ function Model() {
       <div className="container mx-auto py-12">
         <h3 className="text-3xl font-bold text-center mb-8">Featured Products</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.map((product, index) => (
-            <div key={index} className="mb-8 flex flex-col items-center">
+         
+            <div  className="mb-8 flex flex-col items-center">
               <Arcard
-                gltfPath={product.gltfPath}
-                imageSrc={product.image}
-                productName={product.name}
-                price='100'
-                productDetails={[{
+                gltfPath="/models/kokedama_bonsai.glb"
+               imageSrc="/image/17.png"
+                // productName="{product.name}"
+                // price='100'
+                // productDetails={[{
                   
-                  description: product.description,
-                  image: product.image,
-                }]} // Pass the details as an array
-                type="3d-only" // AR and 3D card
-                cardColor="" // Optional: Set the card color
-                textColor="#575656" // Optional: Set text color
-                cardStyle="glassmorphism"
-                
+                //   description: product.description,
+                //   image: product.image,
+                // }]} // Pass the details as an array
+                type="custom-size" // AR and 3D card
+                cardColor="#ffffff" // Optional: Set the card color
+                textColor="#ffffff" // Optional: Set text color
+                cardStyle="minimal"
+                 customWidth="550px"//minimum 300suggested
+                customHeight="550px"// minimum 300suggested
               />
             </div>
-          ))}
+            
+     
         </div>
       </div>
     </div>
