@@ -1,4 +1,4 @@
-import { Arcard } from "3d-ar-product-card"; // Assuming this is the AR product card package
+import { Arcard } from "room-craft"; // Assuming this is the AR product card package
 
 const products = [
   {
@@ -42,7 +42,7 @@ function Model() {
             <div key={index} className="mb-8 flex flex-col items-center">
               <Arcard
                 gltfPath={product.gltfPath}
-                imageSrc={product.image}
+                
                 productName={product.name}
                 productPrice='100'
                 productDescription="a perfect blend of comfort and contemporary design. With its sleek lines, ergonomic curves, and premium materials, this chair offers both style and support. Ideal for living rooms, offices, or dining areas, it’s available in a variety of colors to match your decor"
@@ -66,7 +66,7 @@ function Model() {
             <div key={index} className="mb-8 flex flex-col items-center">
               <Arcard
                 gltfPath={product.gltfPath}
-                imageSrc={product.image}
+              
                 productName={product.name}
                 productPrice='100'
                 productDescription="hi ruchit where are come to library we want job becase we are job less hi ruchit where are come to library we want job becase we are job less
@@ -91,7 +91,7 @@ function Model() {
             <div key={index} className="mb-8 flex flex-col items-center">
               <Arcard
                 gltfPath={product.gltfPath}
-                imageSrc={product.image}
+          
                 productName={product.name}
                 price='100'
                 productDetails={[{
@@ -115,7 +115,7 @@ function Model() {
             <div key={index} className="mb-8 flex flex-col items-center">
               <Arcard
                 gltfPath={product.gltfPath}
-                imageSrc={product.image}
+             
                 productName={product.name}
                 price='100'
                 productDetails={[{
@@ -140,7 +140,7 @@ function Model() {
             <div key={index} className="mb-8 flex flex-col items-center">
               <Arcard
                 gltfPath={product.gltfPath}
-                imageSrc={product.image}
+           
                 productName={product.name}
                 price='100'
                 productDetails={[{
@@ -166,7 +166,7 @@ function Model() {
             <div  className="mb-8 flex flex-col items-center">
               <Arcard
                 gltfPath="/models/kokedama_bonsai.glb"
-               imageSrc="/image/17.png"
+             
                 // productName="{product.name}"
                 // price='100'
                 // productDetails={[{
